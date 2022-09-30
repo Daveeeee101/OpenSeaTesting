@@ -15,7 +15,7 @@ def getHeader(queryName):
         "x-signed-query": key
     }
     apiFiles.close()
-    return ujson.dumps(header)
+    return header
 
 
 def getQuery(queryName, **variables):
